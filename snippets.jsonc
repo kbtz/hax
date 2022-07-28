@@ -1,0 +1,84 @@
+// This file is meant to be linked to vscode snippets
+// ln -s hax/snippets.jsonc ~/.config/Code/User/snippets/hax.code-snippets
+{
+	"keys": {
+		"scope": "javascript,typescript",
+		"prefix": "kk",
+		"body": "ḳ"
+	},
+	"values": {
+		"scope": "javascript,typescript",
+		"prefix": "vv",
+		"body": "ṿ"
+	},
+	"key/value pairs": {
+		"scope": "javascript,typescript",
+		"prefix": "kv",
+		"body": "ḳṿ"
+	},
+	"merge into left": {
+		"scope": "javascript,typescript",
+		"prefix": "ml",
+		"body": "ͼ"
+	},
+	"merge into right": {
+		"scope": "javascript,typescript",
+		"prefix": "mr",
+		"body": "ͽ"
+	},
+	"type any": {
+		"scope": "javascript,typescript",
+		"prefix": "tta",
+		"body": "Ɐ"
+	},
+	"type object": {
+		"scope": "javascript,typescript",
+		"prefix": "tto",
+		"body": "ⱺ"
+	},
+	"type boolean": {
+		"scope": "javascript,typescript",
+		"prefix": "ttb",
+		"body": "ϕ"
+	},
+	"type string": {
+		"scope": "javascript,typescript",
+		"prefix": "tts",
+		"body": "ϛ"
+	},
+	"type number": {
+		"scope": "javascript,typescript",
+		"prefix": "ttn",
+		"body": "ꝝ"
+	},
+	"type symbol": {
+		"scope": "javascript,typescript",
+		"prefix": "tty",
+		"body": "ᴕ"
+	},
+	"type key": {
+		"scope": "javascript,typescript",
+		"prefix": "ttk",
+		"body": "ʞ"
+	},
+	"type array": {
+		"scope": "javascript,typescript",
+		"prefix": "ttaa",
+		"body": "ʭ"
+	},
+	"type record": {
+		"scope": "javascript,typescript",
+		"prefix": "ttr",
+		"body": "ꝛ"
+	},
+	"type callback": {
+		"scope": "javascript,typescript",
+		"prefix": "ttc",
+		"body": "ⲗ"
+	},
+	"type function": {
+		"scope": "javascript,typescript",
+		"prefix": "ttf",
+		"body": "ʄ"
+	}
+}
