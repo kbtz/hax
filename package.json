@@ -3,7 +3,6 @@
 	"version": "0.1.0",
 	"description": "TBD",
 	"main": "index.ts",
-	"scripts": {},
 	"author": "kbtz <contact@kbtz.dev>",
 	"license": "Unlicense"
 }
