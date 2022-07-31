@@ -1,4 +1,4 @@
-export default true;
+export default true
 
 import { register, extend } from './utils'
 

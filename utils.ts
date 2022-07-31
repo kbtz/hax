@@ -1,7 +1,9 @@
 const
 	prop = (target: ⱺ, key: ʞ, fn: ʄ, attributes: PropertyDescriptor = {}) =>
 		Reflect.defineProperty(target, key, {
-			enumerable: false, configurable: true,
+			enumerable: false,
+			configurable: true,
+			writable: !!fn.length,
 			[fn.length ? 'set' : 'get']: fn,
 			...attributes
 		}),

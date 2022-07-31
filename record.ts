@@ -1,4 +1,4 @@
-export default true;
+export default true
 
 import { register, extend } from './utils'
 
@@ -12,8 +12,10 @@ extend(Object, [
 		return Object.values(this)
 	}],
 	[ḳṿ, function (this: ⱺ) {
-		return Reflect.ownKeys(this)
-			.map(k => [k, this[k]])
+		return Array.from(
+			Reflect.ownKeys(this),
+			k => [k, this[k]]
+		)
 	}]
 ])
 
@@ -23,15 +25,21 @@ declare global {
 		ṿ: unique symbol,
 		ḳṿ: unique symbol
 
-	type ꝛ<K extends ʞ = Ϟ, V = Ɐ> = Record<K, V> & {
-		[ḳ]?: ʭ<K>
-		[ṿ]?: ʭ<V>
-		[ḳṿ]?: ʭ<[K, V]>
+	interface Object {
+		[ḳ]?: Ɐ[]
+		[ṿ]?: Ɐ[]
+		[ḳṿ]?: [Ɐ, Ɐ][]
 	}
 
 	interface Array<T> {
-		[ḳ]?: ʭ<ꭖ>
-		[ṿ]?: ʭ<T>
-		[ḳṿ]?: ʭ<[ꭖ, T]>
+		[ḳ]?: ꭖ[]
+		[ṿ]?: T[]
+		[ḳṿ]?: [ꭖ, T][]
 	}
+
+	type ꝛ<K extends ʞ = Ϟ, T = Ɐ> = {
+		[ḳ]?: K[]
+		[ṿ]?: T[]
+		[ḳṿ]?: [K, T][]
+	} & Record<K, T>
 }
