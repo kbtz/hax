@@ -16,8 +16,14 @@ extend(Object, [
 			Reflect.ownKeys(this),
 			k => [k, this[k]]
 		)
-	}]
+	}],
 ])
+
+Object.prototype.map = function (this: ⱺ, f: (v, k) => Ɐ) {
+	Reflect.ownKeys(this)
+		.forEach(k => this[k] = f(this[k], k))
+	return this
+}
 
 declare global {
 	const
@@ -29,17 +35,13 @@ declare global {
 		[ḳ]?: Ɐ[]
 		[ṿ]?: Ɐ[]
 		[ḳṿ]?: [Ɐ, Ɐ][]
-	}
-
-	interface Array<T> {
-		[ḳ]?: ꭖ[]
-		[ṿ]?: T[]
-		[ḳṿ]?: [ꭖ, T][]
+		map?: <R>(f: (v, k) => R) => Ɐ
 	}
 
 	type ꝛ<K extends ʞ = Ϟ, T = Ɐ> = {
 		[ḳ]?: K[]
 		[ṿ]?: T[]
 		[ḳṿ]?: [K, T][]
+		map?: <R>(f: (v: T, k: K) => R) => ꝛ<K, R>
 	} & Record<K, T>
 }
