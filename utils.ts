@@ -3,7 +3,6 @@ const
 		Reflect.defineProperty(target, key, {
 			enumerable: false,
 			configurable: true,
-			writable: !!fn.length,
 			[fn.length ? 'set' : 'get']: fn,
 			...attributes
 		}),

@@ -73,11 +73,6 @@
 		"prefix": "ttp",
 		"body": "ԗ"
 	},
-	"type record": {
-		"scope": "javascript,typescript",
-		"prefix": "ttr",
-		"body": "ꝛ"
-	},
 	"type callback": {
 		"scope": "javascript,typescript",
 		"prefix": "ttc",
@@ -87,5 +82,15 @@
 		"scope": "javascript,typescript",
 		"prefix": "ttf",
 		"body": "ʄ"
+	},
+	"type record": {
+		"scope": "javascript,typescript",
+		"prefix": "ffr",
+		"body": "ꝛ"
+	},
+	"with string": {
+		"scope": "javascript,typescript",
+		"prefix": "ffw",
+		"body": "ʬ"
 	}
 }

@@ -1,2 +1,3 @@
-import './record'
+import './maps'
 import './merge'
+import './proxies'
