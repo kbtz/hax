@@ -1,4 +1,5 @@
 type Ɐ = any
+type ᵾ = undefined
 type ⱺ = object
 type ꙕ = boolean
 type Ϟ = string

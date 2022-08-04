@@ -19,11 +19,16 @@ extend(Object, [
 	}],
 ])
 
-Object.prototype.map = function (this: ⱺ, f: (v, k) => Ɐ) {
-	Reflect.ownKeys(this)
-		.forEach(k => this[k] = f(this[k], k))
-	return this
-}
+Object.assign(window, {
+	each: (obj, fn) =>
+		Reflect.ownKeys(obj)
+			.forEach(k => fn(obj[k], k)),
+	map: (obj, fn) => {
+		Reflect.ownKeys(obj)
+			.forEach(k => obj[k] = fn(obj[k], k))
+		return obj
+	}
+})
 
 declare global {
 	const
@@ -31,17 +36,27 @@ declare global {
 		ṿ: unique symbol,
 		ḳṿ: unique symbol
 
+	function map
+		<K extends ʞ, V, R>
+		(obj: ꝛ<K, V>, fn: (v: V, k: K) => R): { [P in K]: R }
+
+	function map
+		<T extends ⱺ, K extends ʞ, R>
+		(obj: T, fn: (v: Ɐ, k: K) => R): { [P in K]: R }
+
+	function each
+		<T extends ⱺ, K extends keyof T, V = T[K]>
+		(obj: T, fn: (v: V, k: K) => Ɐ): void
+
 	interface Object {
 		[ḳ]?: Ɐ[]
 		[ṿ]?: Ɐ[]
 		[ḳṿ]?: [Ɐ, Ɐ][]
-		map?: <R>(f: (v, k) => R) => Ɐ
 	}
 
 	type ꝛ<K extends ʞ = Ϟ, T = Ɐ> = {
 		[ḳ]?: K[]
 		[ṿ]?: T[]
 		[ḳṿ]?: [K, T][]
-		map?: <R>(f: (v: T, k: K) => R) => ꝛ<K, R>
 	} & Record<K, T>
 }

@@ -33,6 +33,11 @@
 		"prefix": "tta",
 		"body": "Ɐ"
 	},
+	"type undefined": {
+		"scope": "javascript,typescript",
+		"prefix": "ttu",
+		"body": "ᵾ"
+	},
 	"type object": {
 		"scope": "javascript,typescript",
 		"prefix": "tto",
@@ -76,7 +81,7 @@
 	"type callback": {
 		"scope": "javascript,typescript",
 		"prefix": "ttc",
-		"body": "ⲗ"
+		"body": "λ"
 	},
 	"type function": {
 		"scope": "javascript,typescript",
