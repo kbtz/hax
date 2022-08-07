@@ -1,3 +1,6 @@
+import './dom'
 import './maps'
 import './merge'
+import './meta'
 import './proxies'
+import './time'

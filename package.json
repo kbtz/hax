@@ -1,5 +1,6 @@
 {
 	"name": "@kbtz/hax",
+	"type": "module",
 	"version": "0.1.0",
 	"description": "TBD",
 	"main": "index.ts",

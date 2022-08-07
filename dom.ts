@@ -12,11 +12,11 @@ const doc = Object.alias(document, {
 })
 
 Object.assign(window, {
-	select(s: Ϟ, _ = s[0]) {
-		switch (_) {
-			case '#': return doc.id(s)
-			case '.': return doc.name(s)[0]
-			case '?': return doc.query(s)
+	select(s: Ϟ, s1 = s[0], q = s.slice(1)) {
+		switch (s1) {
+			case '#': return doc.id(q)
+			case '.': return doc.name(q)[0]
+			case '?': return doc.query(q)
 			default: return doc.tag(s)[0]
 		}
 	},
