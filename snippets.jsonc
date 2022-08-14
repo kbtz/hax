@@ -38,6 +38,11 @@
 		"prefix": "ttu",
 		"body": "ᵾ"
 	},
+	"type void": {
+		"scope": "javascript,typescript",
+		"prefix": "ttv",
+		"body": "ꝟ"
+	},
 	"type object": {
 		"scope": "javascript,typescript",
 		"prefix": "tto",

@@ -38,7 +38,7 @@ declare global {
 
 	function map
 		<K extends ʞ, V, R>
-		(obj: ꝛ<K, V>, fn: (v: V, k: K) => R): { [P in K]: R }
+		(obj: ꝛ<V, K>, fn: (v: V, k: K) => R): { [P in K]: R }
 
 	function map
 		<T extends ⱺ, K extends ʞ, R>
@@ -54,7 +54,7 @@ declare global {
 		[ḳṿ]?: [Ɐ, Ɐ][]
 	}
 
-	type ꝛ<K extends ʞ = Ϟ, T = Ɐ> = {
+	type ꝛ<T = Ɐ, K extends ʞ = Ϟ> = {
 		[ḳ]?: K[]
 		[ṿ]?: T[]
 		[ḳṿ]?: [K, T][]

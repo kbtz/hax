@@ -28,5 +28,5 @@ Object.assign(window, {
 declare global {
 	function select<T extends keyof Tags>(selector: T): Tags[T] | ᵾ
 	function select(selector: Ϟ): HTMLElement | ᵾ
-	function trigger(event: keyof WindowEventMap): void
+	function trigger(event: keyof WindowEventMap): ꝟ
 }
