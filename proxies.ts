@@ -1,5 +1,11 @@
 export default true
 
+declare global {
+	interface ProxyConstructor {
+		writer(set: (k: ʞ, v: Ɐ) => ꙕ)
+	}
+}
+
 Proxy.writer = function (set, sub: ⱺ = {}) {
 	set.bind(this)
 	return new Proxy(sub, {
@@ -13,10 +19,4 @@ Proxy.writer = function (set, sub: ⱺ = {}) {
 			return false
 		}
 	})
-}
-
-declare global {
-	interface ProxyConstructor {
-		writer(set: (k: ʞ, v: Ɐ) => ꙕ)
-	}
 }

@@ -2,8 +2,6 @@ export default true;
 
 export class With<Context extends object> {
 	static eval: (context: ⱺ, source: Ϟ) => Ɐ
-	static init() {
-	}
 
 	constructor(context: Context) {
 		for (const [name, fn] of contextable(this)) {
@@ -40,6 +38,4 @@ document.head.appendChild(
 		.createContextualFragment(ʬith)
 )
 
-declare global {
-	const ʬ: (ctx: ⱺ, src: Ϟ, out?) => ʄ
-}
+declare const ʬ: (ctx: ⱺ, src: Ϟ, out?) => ʄ

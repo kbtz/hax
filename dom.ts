@@ -1,8 +1,23 @@
 export default true
 
-import './meta'
+declare global {
+	type Tags = HTMLElementTagNameMap & SVGElementTagNameMap
+	type WinEv = WindowEventMap
 
-type Tags = HTMLElementTagNameMap & SVGElementTagNameMap
+	const sel: typeof select
+	function select<T extends keyof Tags>(selector: T): Tags[T] | ᵾ
+	function select(selector: Ϟ): HTMLElement | ᵾ
+
+	function trigger(event: keyof WinEv): ꝟ
+
+	function listen
+		(events: { [K in keyof WinEv]?: (ev: WinEv[K]) => ꝟ }): ꝟ;
+	function listen
+		<K extends keyof WinEv>
+		(type: K, listener: (this: Window, ev: WinEv[K]) => ꝟ): ꝟ;
+}
+
+import './meta'
 
 const doc = Object.alias(document, {
 	id: 'getElementById',
@@ -13,6 +28,14 @@ const doc = Object.alias(document, {
 
 Object.assign(window, {
 	sel: (s) => window.select(s),
+	listen: (e, h) => {
+		if (typeof e == 'string')
+			return window.addEventListener(e, h)
+
+		for (const ev of e) {
+			window.addEventListener(ev, e[ev])
+		}
+	},
 	select(s: Ϟ, s1 = s[0], q = s.slice(1)) {
 		switch (s1) {
 			case '#': return doc.id(q)
@@ -25,10 +48,3 @@ Object.assign(window, {
 		window.dispatchEvent(new Event(name))
 	}
 })
-
-declare global {
-	const sel: typeof select
-	function select<T extends keyof Tags>(selector: T): Tags[T] | ᵾ
-	function select(selector: Ϟ): HTMLElement | ᵾ
-	function trigger(event: keyof WindowEventMap): ꝟ
-}
