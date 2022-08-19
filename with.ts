@@ -1,5 +1,7 @@
 export default true;
 
+import 'hax/dom'
+
 export class With<Context extends object> {
 	static eval: (context: ⱺ, source: Ϟ) => Ɐ
 

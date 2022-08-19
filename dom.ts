@@ -32,7 +32,7 @@ Object.assign(window, {
 		if (typeof e == 'string')
 			return window.addEventListener(e, h)
 
-		for (const ev of e) {
+		for (const ev in e) {
 			window.addEventListener(ev, e[ev])
 		}
 	},

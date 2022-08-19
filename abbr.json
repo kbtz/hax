@@ -1,102 +1,127 @@
 {
-	"keys": {
-		"scope": "javascript,typescript",
-		"prefix": "kk",
-		"body": "ḳ"
+	"greek delta": {
+		"body": "δ",
+		"prefix": "ggd",
+		"scope": "javascript,typescript"
 	},
-	"values": {
-		"scope": "javascript,typescript",
-		"prefix": "vv",
-		"body": "ṿ"
+	"greek epsilon": {
+		"body": "ε",
+		"prefix": "gge",
+		"scope": "javascript,typescript"
+	},
+	"greek lambda": {
+		"body": "λ",
+		"prefix": "ggl",
+		"scope": "javascript,typescript"
+	},
+	"greek phi": {
+		"body": "φ",
+		"prefix": "ggf",
+		"scope": "javascript,typescript"
+	},
+	"greek pi": {
+		"body": "π",
+		"prefix": "ggp",
+		"scope": "javascript,typescript"
 	},
 	"key/value pairs": {
-		"scope": "javascript,typescript",
+		"body": "ḳṿ",
 		"prefix": "kv",
-		"body": "ḳṿ"
+		"scope": "javascript,typescript"
+	},
+	"keys": {
+		"body": "ḳ",
+		"prefix": "kk",
+		"scope": "javascript,typescript"
 	},
 	"merge into left": {
-		"scope": "javascript,typescript",
+		"body": "ͼ",
 		"prefix": "ml",
-		"body": "ͼ"
+		"scope": "javascript,typescript"
 	},
 	"merge into right": {
-		"scope": "javascript,typescript",
+		"body": "ͽ",
 		"prefix": "mr",
-		"body": "ͽ"
+		"scope": "javascript,typescript"
 	},
 	"type any": {
-		"scope": "javascript,typescript",
+		"body": "Ɐ",
 		"prefix": "tta",
-		"body": "Ɐ"
-	},
-	"type undefined": {
-		"scope": "javascript,typescript",
-		"prefix": "ttu",
-		"body": "ᵾ"
-	},
-	"type void": {
-		"scope": "javascript,typescript",
-		"prefix": "ttv",
-		"body": "ꝟ"
-	},
-	"type object": {
-		"scope": "javascript,typescript",
-		"prefix": "tto",
-		"body": "ⱺ"
-	},
-	"type boolean": {
-		"scope": "javascript,typescript",
-		"prefix": "ttb",
-		"body": "ꙕ"
-	},
-	"type string": {
-		"scope": "javascript,typescript",
-		"prefix": "tts",
-		"body": "Ϟ"
-	},
-	"type number": {
-		"scope": "javascript,typescript",
-		"prefix": "ttn",
-		"body": "ꭖ"
-	},
-	"type symbol": {
-		"scope": "javascript,typescript",
-		"prefix": "tty",
-		"body": "ᴕ"
-	},
-	"type key": {
-		"scope": "javascript,typescript",
-		"prefix": "ttk",
-		"body": "ʞ"
+		"scope": "javascript,typescript"
 	},
 	"type array": {
-		"scope": "javascript,typescript",
+		"body": "ʭ",
 		"prefix": "ttaa",
-		"body": "ʭ"
+		"scope": "javascript,typescript"
 	},
-	"type point": {
-		"scope": "javascript,typescript",
-		"prefix": "ttp",
-		"body": "ԗ"
+	"type boolean": {
+		"body": "ꙕ",
+		"prefix": "ttb",
+		"scope": "javascript,typescript"
 	},
 	"type callback": {
-		"scope": "javascript,typescript",
+		"body": "λ",
 		"prefix": "ttc",
-		"body": "λ"
+		"scope": "javascript,typescript"
 	},
 	"type function": {
-		"scope": "javascript,typescript",
+		"body": "ʄ",
 		"prefix": "ttf",
-		"body": "ʄ"
+		"scope": "javascript,typescript"
+	},
+	"type key": {
+		"body": "ʞ",
+		"prefix": "ttk",
+		"scope": "javascript,typescript"
+	},
+	"type number": {
+		"body": "ꭖ",
+		"prefix": "ttn",
+		"scope": "javascript,typescript"
+	},
+	"type object": {
+		"body": "ⱺ",
+		"prefix": "tto",
+		"scope": "javascript,typescript"
+	},
+	"type point": {
+		"body": "ԗ",
+		"prefix": "ttp",
+		"scope": "javascript,typescript"
 	},
 	"type record": {
-		"scope": "javascript,typescript",
+		"body": "ꝛ",
 		"prefix": "ffr",
-		"body": "ꝛ"
+		"scope": "javascript,typescript"
+	},
+	"type string": {
+		"body": "Ϟ",
+		"prefix": "tts",
+		"scope": "javascript,typescript"
+	},
+	"type symbol": {
+		"body": "ᴕ",
+		"prefix": "tty",
+		"scope": "javascript,typescript"
+	},
+	"type undefined": {
+		"body": "ᵾ",
+		"prefix": "ttu",
+		"scope": "javascript,typescript"
+	},
+	"type void": {
+		"body": "ꝟ",
+		"prefix": "ttv",
+		"scope": "javascript,typescript"
+	},
+	"values": {
+		"body": "ṿ",
+		"prefix": "vv",
+		"scope": "javascript,typescript"
 	},
 	"with string": {
-		"scope": "javascript,typescript",
+		"body": "ʬ",
 		"prefix": "ffw",
-		"body": "ʬ"
+		"scope": "javascript,typescript"
 	}
 }
